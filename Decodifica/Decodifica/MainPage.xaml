@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Decodifica.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout  Padding="5" BackgroundColor="#2196F3">
+            <Frame BorderColor="Black" CornerRadius="6">
+                <StackLayout >
+                    <Grid  RowDefinitions="auto" ColumnDefinitions="*" >
+                        <Button x:Name="btnNuovo" Text="Nuovo" Grid.Row="0" Grid.Column="0" Style="{StaticResource  Key=btnAction}"  Clicked="btnNuovo_Clicked"/>
+                        <Button x:Name="btnDecodifica"  Text="Decodifica" Grid.Row="0" Grid.Column="1" Style="{StaticResource  Key=btnAction}" Clicked="btnDecodifica_Clicked"/>
+                    </Grid>
+                    <StackLayout x:Name="stkCodeBar" Orientation="Vertical"  Margin="5,0,0,0" Spacing="0">
+                        <Grid  RowDefinitions="*" ColumnDefinitions="*">
+                            <Label Text="Bar Code" Style="{StaticResource  Key=lblBarCode}"/>
+                            <StackLayout x:Name="stkCodArt" Grid.Row="0" Grid.Column="1" Orientation="Vertical" >
+                                <Entry x:Name="txtCodArt" Style="{StaticResource  Key=txtEntry}"/>
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <Frame BorderColor="Black" CornerRadius="6" HeightRequest="500">
+                <StackLayout>
+                    <StackLayout x:Name="stkDescrizione" Orientation="Vertical"  Spacing="0">
+                        <Label x:Name="descrizione" Style="{StaticResource Key=lblNome}"/>
+                        <StackLayout Orientation="Horizontal" >
+                            <Label x:Name="lblDescrizione" HorizontalOptions="FillAndExpand"  />
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout x:Name="stkUM"  Orientation="Vertical"  Spacing="0">
+                        <Label  x:Name="UM" Style="{StaticResource Key=lblNome}"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Label  x:Name="lblUM" HorizontalOptions="FillAndExpand"  />
+                        </StackLayout>
+                    </StackLayout>
+
+
+                    <StackLayout x:Name="stkARPrezzo"  Orientation="Vertical"  Spacing="0">
+                        <Label  x:Name="ARPrezzo" Style="{StaticResource Key=lblNome}"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Label  x:Name="lbPrezzo" HorizontalOptions="FillAndExpand"  />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

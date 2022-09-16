@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Decodifica.App">
+    <Application.Resources>
+        <Style x:Key="btnAction" TargetType="Button">
+            <Setter Property="WidthRequest" Value="100" />
+            <Setter Property="HeightRequest" Value="50" />
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="#2196F3"/>
+            <Setter Property="CornerRadius" Value="16"/>
+            <Setter Property="FontSize" Value="Medium"/>
+        </Style>
+
+        <Style x:Key="lblBarCode" TargetType="Label">
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
+
+        <Style x:Key="lblNome" TargetType="Label">
+            <Setter Property="BackgroundColor" Value="#CFD8DC"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontSize" Value="Medium"/>
+        </Style>
+
+
+        <Style x:Key="txtEntry" TargetType="Entry">
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="ClearButtonVisibility" Value="WhileEditing"/>
+        </Style>
+    </Application.Resources>
+</Application>
